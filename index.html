@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" />
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        touch-action: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stackblitz-container material">
+      <div
+        class="col-lg-8 control-section inplace-editor-control-section form-layout"
+        id="inplace-editor-control"
+      >
+        <div class="content-wrapper" style="margin-bottom: 25px">
+          <div id="confirmation">
+            <div class="form-group">
+              <label
+                class="col-sm-6 control-label"
+                style="text-align: left;font-size: 14px;"
+              >
+                Comments</label
+              >
+              <div id="inplace_comment_editor" data-underline="false"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 property-section">
+        <table id="property" title="Properties">
+          <tbody>
+            <tr>
+              <td>
+                <div>Mode</div>
+              </td>
+              <td>
+                <div>
+                  <select id="editorMode_form" class="form-control">
+                    <option value="Inline">Inline</option>
+                    <option value="Popup">Popup</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <style>
+        .inplace-control-section.form-layout
+          .e-inplaceeditor
+          .e-editable-component
+          .e-clear-icon-hide,
+        .e-inplaceeditor-tip
+          .e-editable-component
+          .e-input-group
+          .e-clear-icon.e-clear-icon-hide {
+          display: block;
+          visibility: hidden;
+        }
+
+        .inplace-editor-control-section #formId {
+          padding-top: 20px;
+          margin-bottom: 45px;
+          border: 1px solid #ccc;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.36);
+          border-radius: 5px;
+        }
+
+        .inplace-editor-control-section .form-horizontal .form-group {
+          margin: 0 20px;
+        }
+
+        .inplace-editor-control-section .form-horizontal .form-group > * {
+          width: 100%;
+        }
+
+        .inplace-editor-control-section
+          .form-horizontal
+          .form-group:last-child {
+          padding-bottom: 40px;
+        }
+
+        .inplace-editor-control-section .form-title {
+          width: 100%;
+          text-align: center;
+          padding: 10px;
+          font-size: 16px;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 0.7);
+        }
+
+        .inplace-editor-control-section .submit {
+          margin: auto;
+          width: 50%;
+          text-align: center;
+        }
+
+        .inplace-editor-control-section.form-layout
+          .control-wrapper
+          .form-horizontal
+          .control-label {
+          padding: 15px 15px 15px 0;
+          font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+          .inplace-editor-control-section.form-layout
+            .control-wrapper
+            .form-horizontal
+            .control-label {
+            padding-top: 7px;
+            margin-bottom: 0;
+          }
+        }
+      </style>
+    </div>
+  </body>
+</html>
